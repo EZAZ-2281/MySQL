@@ -213,19 +213,26 @@ SELECT rand();
 SELECT exp(3) //which is e to the power 3
 ```
 ```
-
+DESCRIBE student
+//show the student table field and data type. 
 ```
 ```
-
+SELECT COUNT(*)
+FROM teacher
 ```
 ```
-
+SELECT MAX(ID)
+FROM teacher
+//we can also use MIN
 ```
 ```
-
+SELECT SUM(ID), AVG(ID)
+FROM teacher
 ```
 ```
-
+SELECT MIN(GPA)
+FROM student
+WHERE Gender="Male"
 ```
 ```
 
