@@ -124,22 +124,67 @@ WHERE City IN ("Dhaka", "Cumilla");
 //find the city which name is dhaka and cumilla. we can also use NOT IN. 
 ```
 ```
+SELECT *
+FROM student
+WHERE Name LIKE "r%"
+//name which is start with r, no matter what is the next character. 
+//%r means no matter what is the first character, but end with r. 
+or, 
+SELECT *
+FROM student
+WHERE Name LIKE "%ar%"
+//if any name contain ar then it will show in the output. 
+```
+```
+SELECT *
+FROM student
+WHERE Name LIKE "_u%"
+//first character is doesnot matter. if the second character is
+u then the name will be print. we can also use __(double under score)
+```
+```
+SELECT Roll as ID, Name as "First_Name"
+FROM student
+//for custom the table column name. 
+```
+```
+CREATE TABLE teacher(
+	ID int, 
+    Name varchar(20)
+);
+INSERT INTO teacher(ID, Name)
+VALUES
+(12, "musfiq")
+```
+```
+CREATE TABLE teacher_two(
+	ID int NOT NUll AUTO_INCREMENT,
+    Name varchar(20) NOT NULL,
+    PRIMARY KEY(ID)
+);
+INSERT INTO teacher_two(ID, Name)
+VALUES
+(10, "Rahim"), 
+(11, "Karim")
+INSERT INTO teacher_two(Name)
+VALUES
+("Abdul") //id will auto increment. 
+INSERT INTO teacher_two(ID)
+VALUES
+(14)
+UPDATE teacher_two
+SET Name="Kire"
+WHERE ID=14; 
 
+/*
+UPDATE  teacher_two
+SET salary = salary + 5000
+WHERE salary > 10000
+*/
 ```
 ```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
+DELETE FROM teacher_two
+WHERE ID=14; 
 ```
 ```
 
