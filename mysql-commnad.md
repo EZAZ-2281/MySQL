@@ -187,19 +187,30 @@ DELETE FROM teacher_two
 WHERE ID=14; 
 ```
 ```
-
+SELECT UPPER("daffodil university");
+//we can also use LOWER
 ```
 ```
-
+SELECT UPPER(City)
+FROM student
+//convert uppercase of a column. 
+//SELECT UPPER(City) AS Home
 ```
 ```
-
+SELECT concat("i am", " rahim")
+//concat or adding two string. 
 ```
 ```
-
+SELECT greatest(1, 5, 3, 8, 9)
+//we can also use least()
 ```
 ```
-
+SELECT pow(2, 3)
+SELECT log10(2)
+SELECT TRUNCATE(12.3422354234523, 2) //for pirnting two decimal palce. 
+SELECT TRUNCATE(LOG(2), 2)
+SELECT rand(); 
+SELECT exp(3) //which is e to the power 3
 ```
 ```
 
