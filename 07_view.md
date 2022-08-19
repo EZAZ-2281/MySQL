@@ -17,3 +17,4 @@ Delete row from view:
 
 Drop or delete a view comletely: 
 ![](./images-ect/drop.PNG) 
+
