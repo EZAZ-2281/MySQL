@@ -235,25 +235,42 @@ FROM student
 WHERE Gender="Male"
 ```
 ```
-
+SELECT *
+FROM student
+WHERE Age > (SELECT AVG(Age) FROM student); 
+//we use a query inside another query. this is called sub query. 
 ```
 ```
-
+ALTER TABLE teacher_two
+ADD Age int(5)
+//add a new column into a table. 
 ```
 ```
-
+ALTER TABLE teacher_two
+CHANGE Age Boyos int(5)
+//for rename a column name. 
 ```
 ```
-
+ALTER TABLE teacher_two
+DROP Boyos
+//for deleting a column. 
 ```
 ```
-
+UPDATE teacher_two
+SET Age=20
+WHERE ID=10
+//for adding a value inside a null column. 
 ```
 ```
-
+SELECT GPA, sum(GPA)
+FROM student
+GROUP BY Name
+ORDER BY SUM(GPA) DESC
+//its a group by clause. 
 ```
 ```
-
+TRUNCATE TABLE student;
+//the column name will rename as it is. but the value after the column will be removed. 
 ```
 ```
 
